@@ -416,7 +416,9 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>
-          <img src="./images/close.png" alt="закрыть модальное окно" width="30" height="30" />
+          <svg width="30" height="30" class="close-button">
+            <use href="./images/icons-2.svg#close"></use>
+          </svg>
         </button>
         <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
         <form>
@@ -424,7 +426,7 @@
             <label class="form-label"> Имя
             <div class="input-cover">
               <input type="text" class="form-input" name="user-name" />
-                          </label>
+            </label>
               <svg class="form-icon">
                 <use href="./images/icons-2.svg#person"></use>
               </svg>
@@ -456,8 +458,15 @@
           </label>
           </div>
           <div class="accept-order">
-            
+          <label class="label-order">
+            <input type="checkbox" name="checkbox" class="checkbox">
+            <span class="icon-order"></span>
+            <p>Соглашаюсь с рассылкой и принимаю <a href="" class="link-order">Условия договора</a></p>
+          </label>
           </div>
+          <button type="submit" class="form-button">
+            <p>Отправить</p>
+          </button>
         </form>
       </div>
     </div>

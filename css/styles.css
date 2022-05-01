@@ -813,6 +813,12 @@ color: var(--just-white-color)
   padding-right: 8px;
   padding-left: 0px;
   padding-bottom: 0px;
+  fill: blue;
+}
+
+
+.close-button {
+  fill: currentColor;
 }
 
 /* Запоолнение модального окна */
@@ -835,6 +841,8 @@ color: var(--just-white-color)
   margin-top: 10px;
 }
 
+
+
 .label-cover label {
   display: block;
 }
@@ -851,7 +859,7 @@ color: var(--just-white-color)
 .form-input {
   margin: 0;
   padding: 0;
-  padding-left: 35px;
+  padding-left: 42px;
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -871,6 +879,7 @@ color: var(--just-white-color)
   margin-top: 4px;
 }
 
+
 .comment {
   width: 448px;
   height: 120px;
@@ -879,4 +888,78 @@ color: var(--just-white-color)
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 16px 12px;
+}
+
+.accept-order {
+  margin-top: 20px;
+}
+
+.label-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accept-order p {
+  margin: 0;
+  margin-left: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.link-order {
+  color: var(--accent-text-color);
+}
+
+.icon-order {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+.checkbox:checked + .icon-order {
+  background-color: var(--accent-text-color);
+  background-image: url('../images/icon\ check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid var(--accent-text-color);
+  border-radius: 2px;
+}
+
+.form-button {
+  display: flex;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 56px;
+  padding-top: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.form-button p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--just-white-color);
 }
