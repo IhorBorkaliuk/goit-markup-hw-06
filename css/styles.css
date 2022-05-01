@@ -765,30 +765,7 @@ color: var(--just-white-color)
   height: 24px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Модальное окно */
 
 .backdrop {
   position: fixed;
@@ -814,6 +791,8 @@ color: var(--just-white-color)
 
 .modal {
   position: absolute;
+  padding-left: 40px;
+  padding-right: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleX(1) rotatez(0deg);
@@ -836,3 +815,68 @@ color: var(--just-white-color)
   padding-bottom: 0px;
 }
 
+/* Запоолнение модального окна */
+
+  .form-text {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.label-cover {
+  margin-top: 12px;
+}
+
+.label-cover:first-child {
+  margin-top: 10px;
+}
+
+.label-cover label {
+  display: block;
+}
+
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.form-input {
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.input-cover {
+  position: relative;
+  margin-top: 4px;
+}
+
+.comment {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 16px 12px;
+}
