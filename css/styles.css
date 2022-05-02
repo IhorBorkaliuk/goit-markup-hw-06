@@ -732,6 +732,7 @@ color: var(--just-white-color)
   border-radius: 4px;
   padding-left: 16px;
   padding: 15px;
+  outline: none;
 }
 
 .send-button {
@@ -808,17 +809,28 @@ color: var(--just-white-color)
   top: 0;
   right: 0;
   background-color: var(--just-white-color);
-  border: none;
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-  fill: blue;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
 }
 
 
 .close-button {
-  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #000000;
+  transition: fill var(--transition-const);
+}
+
+.modal-close:hover .close-button,
+.modal-close:focus .close-button {
+  fill: var(--accent-text-color);
 }
 
 /* Запоолнение модального окна */
@@ -864,6 +876,16 @@ color: var(--just-white-color)
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+  transition: border var(--transition-const);
+}
+
+.form-input:focus-within {
+  border: 1px solid var(--accent-text-color);
+}
+
+.form-input:focus-within + .form-icon {
+  fill: var(--accent-text-color);
 }
 
 .form-icon {
@@ -872,6 +894,7 @@ color: var(--just-white-color)
   left: 12px;
   width: 18px;
   height: 18px;
+  transition: fill var(--transition-const);
 }
 
 .input-cover {
@@ -887,7 +910,13 @@ color: var(--just-white-color)
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 16px 12px;
+  padding: 12px 16px;
+  outline: none;
+  transition: border var(--transition-const);
+}
+
+.comment:focus-within {
+  border: 1px solid var(--accent-text-color);
 }
 
 .accept-order {
@@ -928,6 +957,7 @@ color: var(--just-white-color)
   margin: -1px;
   border: 0;
   padding: 0;
+  transition: background-color var(--transition-const);
 }
 
 .checkbox:checked + .icon-order {
@@ -953,6 +983,13 @@ color: var(--just-white-color)
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  transition: background-color var(--transition-const);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: var(--order-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .form-button p {
