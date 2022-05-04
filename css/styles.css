@@ -727,6 +727,7 @@ color: var(--just-white-color)
 .email-connect {
   width: 358px;
   height: 50px;
+  color: var(--just-white-color);
   background-color: var(--bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -747,16 +748,13 @@ color: var(--just-white-color)
   border: none;
   padding: 10px;
   padding-left: 29px;
-}
-
-.send-button p {
-  margin: 0;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;  
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--just-white-color);
 }
+
 
 .icon-send {
   position: absolute;
@@ -837,6 +835,7 @@ color: var(--just-white-color)
 
   .form-text {
   margin-top: 40px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -846,14 +845,8 @@ color: var(--just-white-color)
 }
 
 .label-cover {
-  margin-top: 12px;
-}
-
-.label-cover:first-child {
   margin-top: 10px;
 }
-
-
 
 .label-cover label {
   display: block;
@@ -861,6 +854,7 @@ color: var(--just-white-color)
 
 
 .form-label {
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -890,16 +884,11 @@ color: var(--just-white-color)
 
 .form-icon {
   position: absolute;
-  top: 11px;
+  top: 25px;
   left: 12px;
   width: 18px;
   height: 18px;
   transition: fill var(--transition-const);
-}
-
-.input-cover {
-  position: relative;
-  margin-top: 4px;
 }
 
 
@@ -927,9 +916,14 @@ color: var(--just-white-color)
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.accept-order p {
+.text-order {
   margin: 0;
   margin-left: 7px;
   font-weight: 400;
@@ -975,6 +969,7 @@ color: var(--just-white-color)
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
   padding-left: 56px;
   padding-top: 10px;
   width: 200px;
@@ -984,19 +979,15 @@ color: var(--just-white-color)
   border-radius: 4px;
   border: none;
   transition: background-color var(--transition-const);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--just-white-color);
 }
 
 .form-button:hover,
 .form-button:focus {
   background-color: var(--order-button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.form-button p {
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--just-white-color);
 }
